@@ -15,6 +15,7 @@ export default function Nav() {
         { label: 'Reels', icon: '/images/play_black.svg', activeIcon: '/images/play_active.svg', href: "/reels" },
         { label: 'Create', icon: '/images/create.svg', activeIcon: '/images/create.svg', href: "" },
         { label: 'Search', icon: '/images/search_black.svg', activeIcon: '/images/search_active.svg', href: "" },
+        { label: 'Profile', icon: '/images/dp.png', activeIcon: '/images/dp.png', href: "/profile" },
     ];
     
     useEffect(() => {
@@ -23,15 +24,15 @@ export default function Nav() {
     }, [pathname]);
 
     return (
-        <div className="fixed border-0 lg:border-r-1 border-[#D9D9D9] lg:top-0 lg:left-0 bottom-0 w-full bg-white-500 lg:h-full lg:w-[270px] flex">
-            <ul className="bg-white m-2 w-full rounded-full border-1 lg:border-0 border-[#D9D9D9] lg:rounded-md h-[95%] p-2 lg:p-5 grid grid-cols-5 lg:block">
+        <div className="fixed border-0 lg:border-r-1 border-[#D9D9D9] lg:top-0 lg:left-0 bottom-0 w-full bg-white-500 lg:h-full lg:w-[20%] flex">
+            <ul className="bg-white m-2 w-full rounded-full border-1 lg:border-0 border-[#D9D9D9] lg:rounded-md h-[70px] p-2 lg:p-5 grid grid-cols-5 lg:block justify-start lg:items-center">
                 
                 {navItems.map((item) => {
                     const isActive = active === item.label;
                         return (
                             
                             <li key={item.label}
-                                className="items-center m-1 p-2 lg:p-3 cursor-pointer lg:w-[160px]"
+                                className="justify-center lg:justify-start items-center flex mb-0 lg:mb-3 p-2 lg:p-3 cursor-pointer lg:w-[160px]"
                             >
                                 <Link 
                                     onClick={() => setActive(item.label)}
@@ -50,18 +51,6 @@ export default function Nav() {
                             </li>
                         );
                 })}
-                <li 
-                    className="navItem flex-row hidden lg:flex items-center m-1 p-2 lg:p-3 cursor-pointer rounded lg:w-[160px]">
-                    <Image src="/images/dp.jpg" alt="Profile" className="lg:mr-3 m-auto lg:m-0 rounded-full" width={24} height={24} />  
-                    <div className="hidden lg:block">
-                        <span className="text-xs lg:text-[16px]">Profile</span>
-                    </div>
-                </li>
-                <li 
-                    className="navItem flex-row items-center m-1 p-2 lg:p-3 cursor-pointer rounded lg:w-[160px] block lg:hidden">
-                    {/* <span className="dp lg:mr-3 m-auto lg:m-0"></span> */}
-                    <Image src="/images/dp.jpg" alt="Profile" className="lg:mr-3 m-auto lg:m-0 rounded-full" width={24} height={24} />  
-                </li>
             </ul>
         </div>
     )

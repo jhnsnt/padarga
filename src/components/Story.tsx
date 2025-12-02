@@ -36,7 +36,7 @@ export default function Story() {
     }, []);
 
     return (
-        <div className="flex items-center relative text-center my-4">
+        <div className="flex items-center relative text-center px-4 lg:px-5 my-4">
             {/* Left Arrow — fades in/out */}
             <button
                 onClick={scrollLeftFn}

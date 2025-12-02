@@ -11,7 +11,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row w-full min-h-screen bg-white">
                 <div className="w-full lg:w-[20%]">
                 </div>
-                <div className="w-full lg:w-[60%] bg-white pt-4 pb-[80px] lg:pb-0">
+                <div className="w-full lg:w-[60%] bg-white py-5 lg:pb-0">
                     <div className="w-full grid-rows-3">
                         <div className="w-full block mx-auto">
                             <Header />

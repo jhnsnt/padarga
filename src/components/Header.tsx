@@ -21,7 +21,7 @@ export default function Header() {
     }, [pathname]);
 
     return (
-        <div className="flex items-center">
+        <div className="flex items-center px-4 lg:px-5">
             <div className="w-[50%]">
                 <Image 
                     src="/images/padarga_logo.png"
@@ -32,7 +32,7 @@ export default function Header() {
                 />
             </div>
             <div className="w-[50%]">
-                <ul className="flex gap-4 justify-end lg:gap-8 items-center pr-4 lg:pr-8 text-sm lg:text-base">
+                <ul className="flex gap-4 justify-end lg:gap-8 items-center text-sm lg:text-base">
                     {headerItems.map((item) => {
                         const isActive = active === item.label;
                         return (

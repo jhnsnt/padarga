@@ -3,11 +3,11 @@ export default function Feeds() {
     const { scrollRef, scrollLeft, scrollRight } = useHorizontalScroll();
 
     return (
-        <div className="relative w-full">
+        <div className="relative w-full pl-4 lg:pl-5">
             {/* Scroll Buttons */}
             <button
                 onClick={scrollLeft}
-                className="absolute w-[50px] h-[50px] cursor-pointer left-2 top-1/2 -translate-y-1/2 pr-1 z-10 bg-white/20 rounded-full shadow hidden lg:block"
+                className="absolute w-[50px] h-[50px] cursor-pointer left-7 top-1/2 -translate-y-1/2 pr-1 z-10 bg-white/20 rounded-full shadow hidden lg:block"
             >
                 ◀
             </button>
@@ -22,7 +22,7 @@ export default function Feeds() {
             {/* Scroll Container */}
             <div
                 ref={scrollRef}
-                className="flex overflow-x-auto space-x-4 px-4 py-2 scrollbar-hide scroll-smooth snap-x snap-mandatory"
+                className="flex overflow-x-auto space-x-4 px-5 py-2 scrollbar-hide scroll-smooth snap-x snap-mandatory"
                 style={{
                 WebkitOverflowScrolling: 'touch',
                 scrollbarWidth: 'none',
