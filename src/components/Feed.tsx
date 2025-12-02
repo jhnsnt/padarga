@@ -7,14 +7,14 @@ export default function Feeds() {
             {/* Scroll Buttons */}
             <button
                 onClick={scrollLeft}
-                className="absolute cursor-pointer left-0 top-1/2 -translate-y-1/2 z-10 bg-white/70 p-2 rounded-full shadow hidden lg:block"
+                className="absolute w-[50px] h-[50px] cursor-pointer left-2 top-1/2 -translate-y-1/2 pr-1 z-10 bg-white/20 rounded-full shadow hidden lg:block"
             >
                 ◀
             </button>
 
             <button
                 onClick={scrollRight}
-                className="absolute cursor-pointer right-1 top-1/2 -translate-y-1/2 z-10 bg-white/70 p-2 rounded-full shadow hidden lg:block"
+                className="absolute w-[50px] h-[50px] cursor-pointer right-2 top-1/2 -translate-y-1/2 pl-1 z-10 bg-white/20 rounded-full shadow hidden lg:block"
             >
                 ▶
             </button>
@@ -33,7 +33,7 @@ export default function Feeds() {
                 {[1, 2, 3, 4, 5, 6].map((n) => (
                 <div
                     key={n}
-                    className="min-w-[300px] h-[500px] bg-blue-500 text-white rounded-lg flex items-center justify-center snap-start"
+                    className="min-w-[320px] h-[500px] lg:min-w-[450px] lg:h-[550px] bg-blue-500 text-white rounded-[30px] flex items-center justify-center snap-start"
                 >
                     Slide {n}
                 </div>

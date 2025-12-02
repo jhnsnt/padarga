@@ -36,7 +36,7 @@ export default function Story() {
     }, []);
 
     return (
-        <div className="flex items-center relative text-center">
+        <div className="flex items-center relative text-center my-4">
             {/* Left Arrow — fades in/out */}
             <button
                 onClick={scrollLeftFn}
@@ -48,7 +48,7 @@ export default function Story() {
             </button>
             <ul 
                 ref={storyRef}
-                className="story-list flex gap-0 lg:gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2 px-8"
+                className="story-list flex gap-0 lg:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2 px-8"
                 style={{ WebkitOverflowScrolling: "touch" }}
             >
                 {navItems.map((item) => (

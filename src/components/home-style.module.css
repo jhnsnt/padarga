@@ -20,6 +20,8 @@
     -webkit-text-fill-color: transparent;
 }
 
+
+
 .bgPerson.closeFriend {
     background: #07B727;
 }
@@ -69,5 +71,9 @@ p.storyName {
     .bgPerson {
         height: 84px;
         width: 84px;
+    }
+
+    .mobileNav {
+        border: solid 2px #4395e2;
     }
 }

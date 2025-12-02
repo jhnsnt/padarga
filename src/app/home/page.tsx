@@ -13,11 +13,11 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-[60%] bg-white pt-4 pb-[80px] lg:pb-0">
                     <div className="w-full grid-rows-3">
-                        <div className="w-full lg:w-[700px] block mx-auto">
+                        <div className="w-full block mx-auto">
                             <Header />
                             <Story />
                         </div>
-                        <div className="w-full lg:w-[700px] block m-auto">
+                        <div className="w-full block m-auto">
                             <Feed />
                         </div>
                     </div>
