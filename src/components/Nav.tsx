@@ -11,11 +11,11 @@ export default function Nav() {
     const [active, setActive] = useState('');
 
     const navItems = [
-        { label: 'Home', icon: '/images/home_black.svg', activeIcon: '/images/home_active.svg', href: "/home" },
-        { label: 'Reels', icon: '/images/play_black.svg', activeIcon: '/images/play_active.svg', href: "/reels" },
+        { label: 'Home', icon: '/images/home_black.svg', activeIcon: '/images/home_active.svg', href: "" },
+        { label: 'Reels', icon: '/images/play_black.svg', activeIcon: '/images/play_active.svg', href: "" },
         { label: 'Create', icon: '/images/create.svg', activeIcon: '/images/create.svg', href: "" },
         { label: 'Search', icon: '/images/search_black.svg', activeIcon: '/images/search_active.svg', href: "" },
-        { label: 'Profile', icon: '/images/dp.png', activeIcon: '/images/dp.png', href: "/profile" },
+        { label: 'Profile', icon: '/images/dp.png', activeIcon: '/images/dp.png', href: "" },
     ];
     
     useEffect(() => {

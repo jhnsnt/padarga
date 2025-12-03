@@ -3,7 +3,8 @@
 import Header from "@/components/Header";
 import Story from "@/components/Story";
 import Nav from "@/components/Nav";
-import Message from "@/components/Message";
+import Notification from "@/components/Notification";
+import Message from "@/components/Message";   
 import Feed from "@/components/Feed";
 export default function Home() {
     return (
@@ -22,9 +23,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <Message />
+                <Notification />
             </div>
             <Nav />
+            <Message />
         </div>
     );
 }
