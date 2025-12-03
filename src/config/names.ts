@@ -11,5 +11,4 @@ export const navItems = [
     { name: 'Evana', variant: styles.variant5},
     { name: 'Evano', variant: styles.variant6},
     { name: 'Suesesj', variant: styles.variant2, closeFriend: styles.closeFriend},
-
 ];
