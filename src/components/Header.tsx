@@ -28,13 +28,15 @@ export default function Header() {
     return (
         <div className="flex items-center px-4 lg:px-5">
             <div className="w-[50%]">
-                <Image 
-                    src="/images/padarga_logo.png"
-                    width={170}
-                    height={48}
-                    alt="Logo"
-                    className="" 
-                />
+                <Link href="/home">
+                    <Image 
+                        src="/images/padarga_logo.png"
+                        width={170}
+                        height={48}
+                        alt="Logo"
+                        className="" 
+                    />
+                </Link>
             </div>
             <div className="w-[50%]">
                 <ul className="flex justify-end items-center text-sm lg:text-base">
@@ -58,7 +60,7 @@ export default function Header() {
                     {headerItems2.map((item) => {
                         const isActive = active === item.label;
                         return (
-                            <li key={item.label} className="pl-3">
+                            <li key={item.label} className="lg:hidden block pl-3">
                                 <Link 
                                     onClick={() => setActive(item.label)}
                                     href={item.href}

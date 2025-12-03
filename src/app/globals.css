@@ -40,6 +40,9 @@ body {
   --shadow-custom: 0 1px 6px rgba(0, 0, 0, 0.15); 
 }
 
+.gradient-bg {
+    background-image: linear-gradient(to right bottom, #4395e2, #209cde, #00a2d7, #00a7ce, #1dabc4, #3bafb8, #55b3ad, #6cb5a4, #88b89a, #a2ba96, #b8bc99, #cabea1);
+}
 .gradient-text {
     display: inline-block;
     background-image: linear-gradient(to left top, #4395e2, #209cde, #00a2d7, #00a7ce, #1dabc4, #3bafb8, #55b3ad, #6cb5a4, #88b89a, #a2ba96, #b8bc99, #cabea1);
