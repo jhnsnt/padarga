@@ -36,13 +36,11 @@ export default function Story() {
     }, []);
 
     return (
-        <div className="flex items-center relative text-center px-4 lg:px-5 my-2">
+        <div className="flex items-center relative text-center my-2 group overflow-hidden">
             {/* Left Arrow — fades in/out */}
             <button
                 onClick={scrollLeftFn}
-                className={`hidden lg:flex items-center justify-center absolute left-0 z-10 w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 shadow transition-opacity duration-300 ${
-                showLeftArrow ? "opacity-100" : "opacity-0 pointer-events-none"
-                }`}
+                className="absolute w-[30px] h-[30px] cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10 bg-white/40 rounded-full shadow hidden group-hover:block"
             >
                 ←
             </button>
@@ -71,7 +69,7 @@ export default function Story() {
             {/* Right Arrow — always visible on desktop */}
             <button
                 onClick={scrollRightFn}
-                className="hidden lg:flex items-center justify-center absolute right-0 z-10 w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 shadow"
+                className="absolute w-[30px] h-[30px] cursor-pointer right-2 top-1/2 -translate-y-1/2 pl-1 z-10 bg-white/40 rounded-full shadow hidden group-hover:block"
             >
                 →
             </button>

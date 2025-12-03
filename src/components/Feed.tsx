@@ -36,18 +36,18 @@ export default function Feeds() {
     ];
 
     return (
-        <div className="relative w-full">
+        <div className="relative group overflow-hidden">
             {/* Scroll Buttons */}
             <button
                 onClick={scrollLeft}
-                className="absolute w-[50px] h-[50px] cursor-pointer left-7 top-1/2 -translate-y-1/2 pr-1 z-10 bg-white/40 rounded-full shadow hidden lg:block"
+                className="absolute w-[50px] h-[50px] cursor-pointer left-7 top-1/2 -translate-y-1/2 pr-1 z-10 bg-white/40 rounded-full shadow hidden group-hover:block"
             >
                 ◀
             </button>
 
             <button
                 onClick={scrollRight}
-                className="absolute w-[50px] h-[50px] cursor-pointer right-2 top-1/2 -translate-y-1/2 pl-1 z-10 bg-white/40 rounded-full shadow hidden lg:block"
+                className="absolute w-[50px] h-[50px] cursor-pointer right-7 top-1/2 -translate-y-1/2 pl-1 z-10 bg-white/40 rounded-full shadow hidden group-hover:block"
             >
                 ▶
             </button>
