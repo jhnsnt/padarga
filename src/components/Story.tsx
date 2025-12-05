@@ -46,16 +46,16 @@ export default function Story() {
             </button>
             <ul 
                 ref={storyRef}
-                className="story-list flex gap-0 lg:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2 px-8"
+                className="story-list flex gap-0 lg:gap-1 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2"
                 style={{ WebkitOverflowScrolling: "touch" }}
             >
                 {navItems.map((item) => (
                     <li
-                        className="flex-shrink-0 lg:w-20 snap-start pl-2"
+                        className="flex-shrink-0 lg:w-[100px] pl-2"
                         key={item.name}
                     >
                         <div
-                        className={`${styleClasses[0]} ${styleClasses[2]} ${item.noStory} ${item.closeFriend} m-auto flex items-center`}
+                            className={`${styleClasses[0]} ${styleClasses[2]} ${item.noStory} ${item.closeFriend} m-auto flex items-center`}
                         >
                         <div
                             className={`block m-auto ${item.variant} ${styleClasses[4]}`}
